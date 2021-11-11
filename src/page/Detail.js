@@ -134,7 +134,7 @@ export default function Detail(props) {
                       fontWeight: "bold"
                     }}
                   >
-                    Post Detail
+                    Détail du post
                   </Typography>
                 </Button>
                 <div></div>
@@ -229,9 +229,9 @@ export default function Detail(props) {
                       value={OrderToIndex[orderRepliesBy]}
                       onChange={handleChangeOrder}
                     >
-                      <MenuItem value={0}>Latest</MenuItem>
-                      <MenuItem value={10}>Oldest</MenuItem>
-                      <MenuItem value={20}>Economy</MenuItem>
+                      <MenuItem value={0}>Plus Récents</MenuItem>
+                      <MenuItem value={10}>Plus Anciens</MenuItem>
+                      <MenuItem value={20}>Economie</MenuItem>
                     </Select>
                   </FormControl>
                 )}

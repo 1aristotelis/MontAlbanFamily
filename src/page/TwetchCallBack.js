@@ -94,13 +94,13 @@ export default function TwetchCallback(props) {
                 lineHeight: "24px"
               }}
             >
-              One Last Thing...
+              Une dernière chose...
             </Typography>
             <Typography
               variant="body1"
               style={{ marginTop: "16px", textAlign: "center" }}
             >
-              We need you to manually link your{" "}
+              Veuillez relier manuellement votre{" "}
               <a
                 className="Links"
                 href="https://twetch.app/wallet"
@@ -111,13 +111,15 @@ export default function TwetchCallback(props) {
                   Twetch Wallet
                 </span>
               </a>{" "}
-              to {config.appIdentity.title}.
+              à {config.appIdentity.title}.
             </Typography>
             <Typography
               variant="body1"
               style={{ textAlign: "center", marginBottom: "36px" }}
             >
-              <strong>We will never store your phrase.</strong>
+              <strong>
+                Nous ne stockons pas votre phrase de récupération.
+              </strong>
             </Typography>
             <div
               style={{
@@ -146,7 +148,7 @@ export default function TwetchCallback(props) {
                   fullWidth
                   multiline
                   rows={4}
-                  placeholder="Paste your Twetch Wallet Recovery Phrase here"
+                  placeholder="Coller la phrase de récupération de votre Twetch Wallet ici"
                 />
                 {error && (
                   <Typography
@@ -168,7 +170,8 @@ export default function TwetchCallback(props) {
                   onClick={handleSubmit}
                 >
                   <Typography variant="body1">
-                    Link Twetch Wallet and start {config.appIdentity.mask}
+                    Relier le Twetch Wallet et commencer à{" "}
+                    {config.appIdentity.mask}
                   </Typography>
                 </Button>
               </form>

@@ -84,7 +84,7 @@ export default function Welcome() {
                           textTransform: "none"
                         }}
                       >
-                        Sign In
+                        Se Connecter
                       </Link>
                     </Button>
                   </Grid>

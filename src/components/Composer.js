@@ -34,7 +34,7 @@ export default function Composer(props) {
   const ticker = config.customization.ticker;
   const replyTx = location.pathname.split("/")[2];
   const [type, setType] = useState("default");
-  const [placeholder, setPlaceholder] = useState("What's the latest?");
+  const [placeholder, setPlaceholder] = useState("Quoi de neuf ?");
   const [content, setContent] = useState("");
   const [open, setOpen] = useState(false);
   const [success, setSuccess] = useState(false);
@@ -65,7 +65,7 @@ export default function Composer(props) {
         }
       }`).then((res) =>
         setPlaceholder(
-          `In reply to ${res.allPosts.edges[0].node.userByUserId.name}`
+          `En réponse à ${res.allPosts.edges[0].node.userByUserId.name}`
         )
       );
     }
@@ -191,7 +191,7 @@ export default function Composer(props) {
                 }}
                 onClick={handleDrawerToggle}
               >
-                Close
+                Fermer
               </p>
             </Paper>
             <div
@@ -348,7 +348,7 @@ export default function Composer(props) {
                 variant="contained"
                 onClick={handle1Click}
               >
-                Twetch It!
+                Twetch ça!
               </Button>
               <div style={{ flexGrow: 1 }} />
             </div>
@@ -493,7 +493,7 @@ export default function Composer(props) {
                   disabled={!content || content.length > 256}
                   onClick={handleSubmit}
                 >
-                  Post
+                  Envoyer
                 </Button>
               </Grid>
             </Grid>
