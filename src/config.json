@@ -1,0 +1,29 @@
+{
+  "appIdentity": {
+    "url": "alb.eggdao.xyz",
+    "title": "Mont Alban Family",
+    "subtitle": "💚💛❤️ Mont Alban forever 💚💛❤️",
+    "description": "Bienvenue sur le réseau social des Scouts et Guides du Mont Alban",
+    "logo": "./resources/Logo.png",
+    "banner": "./resources/Banner.png",
+    "mask": "🟩🟨🟥"
+  },
+  "ownerInfo": {
+    "clientIdentifier": "10d3b9a3-3733-4769-9f97-d255ee37113b",
+    "inviteLink": "https://twet.ch/inv/montalban"
+  },
+  "customization": {
+    "ticker": "#montalban",
+    "dashBoardFilters": [],
+    "palette": {
+      "primary": { "main": "#2e7d32" },
+      "secondary": { "main": "#c62828" }
+    },
+    "postPrice": "0.02",
+    "likePrice": "0.10"
+  },
+  "welcome": {
+    "externalLink": "https://montalban.sgdf06.fr/",
+    "buttonText": "Nous rencontrer"
+  }
+}
